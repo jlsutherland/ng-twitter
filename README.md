@@ -73,20 +73,13 @@ getHomeTimeline(object options); // GET statuses/home_timeline
 getMentionsTimeline(object options) // GET statuses/mentions_timeline
 getUserTimeline(object options) // GET statuses/user_timeline
 searchTweets(string keyword, object options); // GET search/tweets
+getListTweets(object options) // GET list/statuses
 postStatusUpdate(string statusText, object options); // POST statuses/update
 getUserDetails(string user_id, object options); // GET users/show
 getRequest(string full_twitter_api_url, object options); // GET custom url
 postRequest(string full_twitter_api_url, object options); // POST custom url
 ```
 
-
 ## Contribution Rules
 
 All contributions must be made via the `development` branch.  This keeps the project more maintainable in terms of versioning as well as code control.
-
-
-## Have a question or found a bug?
-
-Message me on Twitter - [@schlimmson](https://www.twitter.com/schlimmson)
-
-Follow my Blog Devdactic - [https://devdactic.com](https://devdactic.com)

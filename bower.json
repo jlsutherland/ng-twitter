@@ -1,10 +1,11 @@
 {
-  "name": "ng-twitter-api",
-  "version": "0.1.5",
+  "name": "angular-twitter-api",
+  "version": "0.1.6",
   "authors": [
-    "Simon Reimler <http://www.devdactic.com>"
+      "Simon Reimler <http://www.devdactic.com>",
+      "Joe Sutherland <http://cleveranalytics.org>"
   ],
-  "homepage": "https://github.com/saimon24/ng-twitter",
+  "homepage": "https://github.com/jlsutherland/ng-twitter",
   "description": "AngularJS Twitter REST Api wrapper library",
   "main": "./dist/ng-twitter-api.js",
   "license": "MIT",
