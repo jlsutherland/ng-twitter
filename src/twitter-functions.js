@@ -11,6 +11,7 @@ angular.module('twitter.functions', [])
   var STATUS_MENTIONS_URL = 'https://api.twitter.com/1.1/statuses/mentions_timeline.json';
   var USER_TIMELINE_URL = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
   var USER_DETAILS_URL = 'https://api.twitter.com/1.1/users/show.json';
+  var USER_LIST_URL = 'https://api.twitter.com/1.1/lists/statuses.json';
 
   function getRequest(url, neededParams, optionalParams) {
     var deferred = $q.defer();
@@ -72,6 +73,9 @@ angular.module('twitter.functions', [])
     },
     getUserTimeline: function(parameters) {
       return getRequest(USER_TIMELINE_URL, parameters);
+    },
+    getListTweets: function(parameters) {
+      return getRequest(USER_LIST_URL, parameters);
     },
     searchTweets: function(keyword, parameters) {
       return getRequest(SEARCH_TWEETS_URL, {q: keyword}, parameters);
